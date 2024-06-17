@@ -1,0 +1,69 @@
+{
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint:js": "eslint src/js/*.js --fix",
+    "lint:css": "stylelint src/css/*.css",
+    "prepare": "vite build",
+    "logout": "shopify auth logout",
+    "dev:sync": "node ./run_dev_sync.cjs",
+    "cli": "brew update && brew upgrade shopify-cli"
+  },
+  "dependencies": {
+    "eslint": "^9.5.0",
+    "vite": "^5.3.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.19",
+    "postcss": "^8.4.38",
+    "tailwindcss": "^3.4.4",
+    "@by-association-only/eslint-config-unisian": "^1.4.1",
+    "cssnano": "^6.1.2",
+    "eslint": "^8.17.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.1.3",
+    "lint-staged": "^11.0.0",
+    "postcss-cli": "^11.0.0",
+    "postcss-import": "^16.1.0",
+    "stylelint": "^14.5.3",
+    "stylelint-config-prettier": ">=9.0.0",
+    "stylelint-order": ">=5.0.0"
+  },
+  "eslintConfig": {
+    "extends": [
+      "@by-association-only/eslint-config-unisian"
+    ],
+    "plugins": [
+      "import"
+    ],
+    "globals": {
+      "document": true,
+      "window": true,
+      "Shopify": true,
+      "theme": true
+    },
+    "rules": {
+      "no-console": "off",
+      "quotes": [
+        "error",
+        "single",
+        {
+          "avoidEscape": true,
+          "allowTemplateLiterals": true
+        }
+      ],
+      "import/no-unresolved": [
+        "error",
+        {
+          "ignore": [
+            "@ice/"
+          ]
+        }
+      ]
+    },
+    "settings": {
+      "polyfills": [
+        "fetch"
+      ]
+    }
+  }
+}
