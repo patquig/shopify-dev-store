@@ -11,5 +11,17 @@
     "editor.defaultFormatter": "Shopify.theme-check-vscode",
     "editor.formatOnSave": true
   },
-  "themeCheck.checkOnSave": true
+  "themeCheck.checkOnSave": true,
+  "emeraldwalk.runonsave": {
+    "commands": [
+      {
+        "match": "\\.js$",
+        "cmd": "npm run prepare"
+      },
+      {
+        "match": "\\.css$",
+        "cmd": "npm run prepare"
+      }
+    ]
+  }
 }
