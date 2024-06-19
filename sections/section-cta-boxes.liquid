@@ -1,0 +1,205 @@
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+<div class="section-{{ section.id }}-padding tw-px-4">
+  <div class="tw-mx-auto tw-max-w-screen-xl tw-border tw-border-steel tw-rounded-xl">
+    <div class="tw-grid tw-grid-cols-2 md:tw-grid-cols-4 tw-divide-x tw-divide-y md:tw-divide-y-0 tw-divide-steel">
+      <a
+        class="tw-flex tw-flex-col tw-p-4 lg:tw-p-6 xl:tw-p-8 tb-quick-links-divide-fix hover:tw-bg-sheep/70 first:md:tw-rounded-l-xl last:md:tw-rounded-r-xl tw-group/item"
+        href="/pages/roof-tent-guide"
+        data-tracking="quick-links-Roof-Tent-Guide"
+      >
+        <div class="tw-h-10 tw-w-10 tw-mb-1 md:tw-mb-3 tw-text-tugboat">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M19 20 10 4"></path><path d="m5 20 9-16"></path><path d="M3 20h18"></path><path d="m12 15-3 5"></path><path d="m12 15 3 5"></path>
+          </svg>
+        </div>
+        <h4 class="tw-text-base md:tw-text-lg tw-font-body tw-normal-case tw-font-medium tw-mb-1.5 md:tw-mb-0">
+          Roof Tent Guide
+        </h4>
+        <p class="tw-text-battleship md:tw-text-left tw-text-sm lg:tw-text-base tw-mb-1.5 md:tw-mb-3 tw-hidden md:tw-block">
+          Installation, roof bars, etc.
+        </p>
+        <div class="tw-flex tw-items-center group-hover/item:tw-underline tw-underline-offset-4 tw-text-orange tw-font-medium tw-text-sm sm:tw-text-base">
+          <div>Quick guide</div>
+          <div class="tw-h-3 tw-w-3 tw-ml-0.75 sm:tw-h-3.5 sm:tw-w-3.5 sm:tw-ml-1">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+            >
+              <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"></path>
+            </svg>
+          </div>
+        </div></a
+      ><a
+        class="tw-flex tw-flex-col tw-p-4 lg:tw-p-6 xl:tw-p-8 tb-quick-links-divide-fix hover:tw-bg-sheep/70 first:md:tw-rounded-l-xl last:md:tw-rounded-r-xl tw-group/item"
+        href="/pages/compare-roof-tent-models"
+        data-tracking="quick-links-Compare-Models"
+      >
+        <div class="tw-h-10 tw-w-10 tw-mb-1 md:tw-mb-3 tw-text-tugboat">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M9 3H5a2 2 0 0 0-2 2v4m6-6h10a2 2 0 0 1 2 2v4M9 3v18m0 0h10a2 2 0 0 0 2-2V9M9 21H5a2 2 0 0 1-2-2V9m0 0h18"></path>
+          </svg>
+        </div>
+        <h4 class="tw-text-base md:tw-text-lg tw-font-body tw-normal-case tw-font-medium tw-mb-1.5 md:tw-mb-0">
+          Compare Models
+        </h4>
+        <p class="tw-text-battleship md:tw-text-left tw-text-sm lg:tw-text-base tw-mb-1.5 md:tw-mb-3 tw-hidden md:tw-block">
+          Which model is right for you?
+        </p>
+        <div class="tw-flex tw-items-center group-hover/item:tw-underline tw-underline-offset-4 tw-text-orange tw-font-medium tw-text-sm sm:tw-text-base">
+          <div>Compare</div>
+          <div class="tw-h-3 tw-w-3 tw-ml-0.75 sm:tw-h-3.5 sm:tw-w-3.5 sm:tw-ml-1">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+            >
+              <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"></path>
+            </svg>
+          </div>
+        </div></a
+      ><a
+        class="tw-flex tw-flex-col tw-p-4 lg:tw-p-6 xl:tw-p-8 tb-quick-links-divide-fix hover:tw-bg-sheep/70 first:md:tw-rounded-l-xl last:md:tw-rounded-r-xl tw-group/item"
+        href="/pages/meet-the-community"
+        data-tracking="quick-links-Our-Community"
+      >
+        <div class="tw-h-10 tw-w-10 tw-mb-1 md:tw-mb-3 tw-text-tugboat">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.2"
+            stroke="currentColor"
+          >
+            <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"></path>
+          </svg>
+        </div>
+        <h4 class="tw-text-base md:tw-text-lg tw-font-body tw-normal-case tw-font-medium tw-mb-1.5 md:tw-mb-0">
+          Our Community
+        </h4>
+        <p class="tw-text-battleship md:tw-text-left tw-text-sm lg:tw-text-base tw-mb-1.5 md:tw-mb-3 tw-hidden md:tw-block">
+          Meet the TentBox community
+        </p>
+        <div class="tw-flex tw-items-center group-hover/item:tw-underline tw-underline-offset-4 tw-text-orange tw-font-medium tw-text-sm sm:tw-text-base">
+          <div>Learn more</div>
+          <div class="tw-h-3 tw-w-3 tw-ml-0.75 sm:tw-h-3.5 sm:tw-w-3.5 sm:tw-ml-1">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+            >
+              <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"></path>
+            </svg>
+          </div>
+        </div></a
+      ><a
+        class="tw-flex tw-flex-col tw-p-4 lg:tw-p-6 xl:tw-p-8 tb-quick-links-divide-fix hover:tw-bg-sheep/70 first:md:tw-rounded-l-xl last:md:tw-rounded-r-xl tw-group/item"
+        href="/pages/contact-us"
+        data-tracking="quick-links-Contact-Us"
+      >
+        <div class="tw-h-10 tw-w-10 tw-mb-1 md:tw-mb-3 tw-text-tugboat">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.2"
+            stroke="currentColor"
+          >
+            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12.76c0 1.6 1.123 2.994 2.707 3.227 1.087.16 2.185.283 3.293.369V21l4.076-4.076a1.526 1.526 0 011.037-.443 48.282 48.282 0 005.68-.494c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z"></path>
+          </svg>
+        </div>
+        <h4 class="tw-text-base md:tw-text-lg tw-font-body tw-normal-case tw-font-medium tw-mb-1.5 md:tw-mb-0">
+          Contact Us
+        </h4>
+        <p class="tw-text-battleship md:tw-text-left tw-text-sm lg:tw-text-base tw-mb-1.5 md:tw-mb-3 tw-hidden md:tw-block">
+          Our team is ready to help
+        </p>
+        <div class="tw-flex tw-items-center group-hover/item:tw-underline tw-underline-offset-4 tw-text-orange tw-font-medium tw-text-sm sm:tw-text-base">
+          <div>Chat now</div>
+          <div class="tw-h-3 tw-w-3 tw-ml-0.75 sm:tw-h-3.5 sm:tw-w-3.5 sm:tw-ml-1">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+            >
+              <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"></path>
+            </svg>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "CTA boxes",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Padding"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "Padding Top",
+      "default": 0,
+      "min": 0,
+      "max": 100,
+      "step": 10
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "Padding Bottom",
+      "default": 0,
+      "min": 0,
+      "max": 100,
+      "step": 10
+    }
+  ],
+  "presets": [
+    {
+      "name": "CTA boxes",
+      "settings": {}
+    }
+  ]
+}
+{% endschema %}

@@ -38,6 +38,21 @@
     {{ 'main.css' | asset_url | stylesheet_tag }}
     <script src="{{ 'main.min.js' | asset_url }}" type="module"></script>
 
+    {%- if settings.smooth_scroll -%}
+      <script src="https://unpkg.com/lenis@1.1.3/dist/lenis.min.js" async></script>
+    {%- endif -%}
+
+    <style data-shopify="">
+      /* Heading font */
+
+      @font-face {
+        font-family: 'GT America Condensed';
+        src: url('//tentbox.com/cdn/shop/files/GT-America-Condensed-Bold.woff2?v=145108417479657132') format('woff2');
+        font-weight: 700;
+        font-display: swap;
+      }
+    </style>
+
     {{ content_for_header }}
 
     {%- liquid
@@ -357,6 +372,19 @@
 
     {%- if settings.predictive_search_enabled -%}
       <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
+    {%- endif -%}
+
+    {%- if settings.smooth_scroll -%}
+      <script>
+        const lenis = new Lenis();
+
+        function raf(time) {
+          lenis.raf(time);
+          requestAnimationFrame(raf);
+        }
+
+        requestAnimationFrame(raf);
+      </script>
     {%- endif -%}
   </body>
 </html>

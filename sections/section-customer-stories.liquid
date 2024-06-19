@@ -1,0 +1,481 @@
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+
+  /* Carousel Styles */
+  .post_carousel {
+    overflow: hidden;
+  }
+  .post_carousel__slide {
+      flex: 0 0 260px;
+  }
+  @media (min-width: 375px) {
+    .post_carousel__slide {
+      flex: 0 0 280px;
+    }
+  }
+  @media (min-width: 1280px) {
+    .post_carousel__slide {
+      flex: 0 0 320px;
+    }
+    .post_carousel__dots > .post_carousel__dot:nth-child(7), .post_carousel__dots > .post_carousel__dot:nth-child(8) {
+    display: none;
+    }
+  }
+{%- endstyle -%}
+
+<div class="section-{{ section.id }}-padding">
+  <div class="tw-bg-cotton tw-border-y-2 tw-border-camel tw-py-10 md:tw-py-16">
+    <h2 class="tw-text-3xl md:tw-text-4xl md:tw-text-center tw-px-4 tw-mb-4 md:tw-mb-6">TentBoxers in Action</h2>
+
+    <div class="tw-relative">
+      <div class="post_carousel tb-xl-adjuster tw-cursor-grab active:tw-cursor-grabbing">
+        <div
+          class="post_carousel__viewport tw-flex tw-overflow-scroll tb-hide-scroll sm:tw-overflow-visible"
+          style="transform: translate3d(0px, 0px, 0px);"
+        >
+          <div class="post_carousel__slide last:tw-mr-4 sm:last:tw-mr-0 xl:last:tw-mr-4 1.5xl:last:tw-mr-0 1.5xl:first:-tw-ml-4">
+            <div class="tw-bg-white tw-border tw-border-steel tw-rounded-xl tw-ml-4 tw-h-full">
+              <div class="tw-relative">
+                <img
+                  src="//tentbox.com/cdn/shop/articles/TentBox_Cargo_Customer_Story.jpg?v=1718201216&amp;width=303"
+                  alt="TentBox Cargo 2.0 in Sunset orange on top of a VW T5 campervan"
+                  srcset="//tentbox.com/cdn/shop/articles/TentBox_Cargo_Customer_Story.jpg?v=1718201216&amp;width=260 260w, //tentbox.com/cdn/shop/articles/TentBox_Cargo_Customer_Story.jpg?v=1718201216&amp;width=280 280w, //tentbox.com/cdn/shop/articles/TentBox_Cargo_Customer_Story.jpg?v=1718201216&amp;width=303 303w"
+                  width="303"
+                  height="202"
+                  loading="lazy"
+                  sizes="(max-width: 374px) 260px, (max-width: 1279px) 280px, 303px"
+                  class="tw-rounded-t-xl tw-object-cover tw-aspect-[4/3]"
+                >
+                <div class="tw-flex tw-gap-1.5 tw-absolute tw-bottom-3 tw-left-3"></div>
+              </div>
+              <div class="tw-p-4">
+                <h3 class="tw-text-base md:tw-text-lg tw-mb-2 md:tw-mb-3 tw-font-body tw-normal-case tw-font-medium tw-line-clamp-3">
+                  A great addition to the adventure lifestyle
+                </h3>
+                <p class="tw-mb-4 tw-line-clamp-3">Ian&nbsp;tells&nbsp;us about his&nbsp;travels with the Cargo 2.0.</p>
+                <div class="tw-mb-4">
+                  <div class="tw-flex ">
+                    <a
+                      href="/blogs/customer-stories/a-great-addition-to-the-adventure-lifestyle"
+                      class="tw-inline-flex tw-items-center hover:tw-underline tw-underline-offset-4 tw-font-medium   tw-text-orange"
+                      target="_self"
+                      data-tracking="featured-posts-block-link_Read-more_1"
+                    >
+                      <div>Read more</div>
+                      <div class="tw-h-3.5 tw-w-3.5 tw-ml-1">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="currentColor"
+                        >
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"></path>
+                        </svg>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="post_carousel__slide last:tw-mr-4 sm:last:tw-mr-0 xl:last:tw-mr-4 1.5xl:last:tw-mr-0 1.5xl:first:-tw-ml-4">
+            <div class="tw-bg-white tw-border tw-border-steel tw-rounded-xl tw-ml-4 tw-h-full">
+              <div class="tw-relative">
+                <img
+                  src="//tentbox.com/cdn/shop/articles/community-stories-our-only-regret-we-didnt-buy-one-sooner.jpg?v=1684778661&amp;width=303"
+                  alt="Community Stories: &quot;Our only regret? We didn’t buy one sooner!&quot;"
+                  srcset="//tentbox.com/cdn/shop/articles/community-stories-our-only-regret-we-didnt-buy-one-sooner.jpg?v=1684778661&amp;width=260 260w, //tentbox.com/cdn/shop/articles/community-stories-our-only-regret-we-didnt-buy-one-sooner.jpg?v=1684778661&amp;width=280 280w, //tentbox.com/cdn/shop/articles/community-stories-our-only-regret-we-didnt-buy-one-sooner.jpg?v=1684778661&amp;width=303 303w"
+                  width="303"
+                  height="315"
+                  loading="lazy"
+                  sizes="(max-width: 374px) 260px, (max-width: 1279px) 280px, 303px"
+                  class="tw-rounded-t-xl tw-object-cover tw-aspect-[4/3]"
+                >
+                <div class="tw-flex tw-gap-1.5 tw-absolute tw-bottom-3 tw-left-3"></div>
+              </div>
+              <div class="tw-p-4">
+                <h3 class="tw-text-base md:tw-text-lg tw-mb-2 md:tw-mb-3 tw-font-body tw-normal-case tw-font-medium tw-line-clamp-3">
+                  "Our only regret? We didn’t buy one sooner!"
+                </h3>
+                <p class="tw-mb-4 tw-line-clamp-3">Amy and Shaun explore the UK with their Lite</p>
+                <div class="tw-mb-4">
+                  <div class="tw-flex ">
+                    <a
+                      href="/blogs/customer-stories/community-stories-our-only-regret-we-didnt-buy-one-sooner"
+                      class="tw-inline-flex tw-items-center hover:tw-underline tw-underline-offset-4 tw-font-medium   tw-text-orange"
+                      target="_self"
+                      data-tracking="featured-posts-block-link_Read-more_2"
+                    >
+                      <div>Read more</div>
+                      <div class="tw-h-3.5 tw-w-3.5 tw-ml-1">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="currentColor"
+                        >
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"></path>
+                        </svg>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="post_carousel__slide last:tw-mr-4 sm:last:tw-mr-0 xl:last:tw-mr-4 1.5xl:last:tw-mr-0 1.5xl:first:-tw-ml-4">
+            <div class="tw-bg-white tw-border tw-border-steel tw-rounded-xl tw-ml-4 tw-h-full">
+              <div class="tw-relative">
+                <img
+                  src="//tentbox.com/cdn/shop/articles/tentbox-classic-makes-the-perfect-child-friendly-base.jpg?v=1684778701&amp;width=303"
+                  alt="TentBox Classic makes the perfect child-friendly base"
+                  srcset="//tentbox.com/cdn/shop/articles/tentbox-classic-makes-the-perfect-child-friendly-base.jpg?v=1684778701&amp;width=260 260w, //tentbox.com/cdn/shop/articles/tentbox-classic-makes-the-perfect-child-friendly-base.jpg?v=1684778701&amp;width=280 280w, //tentbox.com/cdn/shop/articles/tentbox-classic-makes-the-perfect-child-friendly-base.jpg?v=1684778701&amp;width=303 303w"
+                  width="303"
+                  height="227"
+                  loading="lazy"
+                  sizes="(max-width: 374px) 260px, (max-width: 1279px) 280px, 303px"
+                  class="tw-rounded-t-xl tw-object-cover tw-aspect-[4/3]"
+                >
+                <div class="tw-flex tw-gap-1.5 tw-absolute tw-bottom-3 tw-left-3"></div>
+              </div>
+              <div class="tw-p-4">
+                <h3 class="tw-text-base md:tw-text-lg tw-mb-2 md:tw-mb-3 tw-font-body tw-normal-case tw-font-medium tw-line-clamp-3">
+                  TentBox Classic perfect for child-friendly camping
+                </h3>
+                <p class="tw-mb-4 tw-line-clamp-3">Family camping with a TentBox Classic</p>
+                <div class="tw-mb-4">
+                  <div class="tw-flex ">
+                    <a
+                      href="/blogs/customer-stories/tentbox-classic-makes-the-perfect-child-friendly-base"
+                      class="tw-inline-flex tw-items-center hover:tw-underline tw-underline-offset-4 tw-font-medium   tw-text-orange"
+                      target="_self"
+                      data-tracking="featured-posts-block-link_Read-more_3"
+                    >
+                      <div>Read more</div>
+                      <div class="tw-h-3.5 tw-w-3.5 tw-ml-1">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="currentColor"
+                        >
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"></path>
+                        </svg>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="post_carousel__slide last:tw-mr-4 sm:last:tw-mr-0 xl:last:tw-mr-4 1.5xl:last:tw-mr-0 1.5xl:first:-tw-ml-4">
+            <div class="tw-bg-white tw-border tw-border-steel tw-rounded-xl tw-ml-4 tw-h-full">
+              <div class="tw-relative">
+                <img
+                  src="//tentbox.com/cdn/shop/articles/travels-with-tentbox-lite-the-world-is-our-oyster.jpg?v=1684778729&amp;width=303"
+                  alt="Travels With TentBox Lite: &quot;The World Is Our Oyster!&quot;"
+                  srcset="//tentbox.com/cdn/shop/articles/travels-with-tentbox-lite-the-world-is-our-oyster.jpg?v=1684778729&amp;width=260 260w, //tentbox.com/cdn/shop/articles/travels-with-tentbox-lite-the-world-is-our-oyster.jpg?v=1684778729&amp;width=280 280w, //tentbox.com/cdn/shop/articles/travels-with-tentbox-lite-the-world-is-our-oyster.jpg?v=1684778729&amp;width=303 303w"
+                  width="303"
+                  height="177"
+                  loading="lazy"
+                  sizes="(max-width: 374px) 260px, (max-width: 1279px) 280px, 303px"
+                  class="tw-rounded-t-xl tw-object-cover tw-aspect-[4/3]"
+                >
+                <div class="tw-flex tw-gap-1.5 tw-absolute tw-bottom-3 tw-left-3"></div>
+              </div>
+              <div class="tw-p-4">
+                <h3 class="tw-text-base md:tw-text-lg tw-mb-2 md:tw-mb-3 tw-font-body tw-normal-case tw-font-medium tw-line-clamp-3">
+                  Travels With TentBox Lite: "The World Is Our Oyster!"
+                </h3>
+                <p class="tw-mb-4 tw-line-clamp-3">Kerri and her partner explore Scotland</p>
+                <div class="tw-mb-4">
+                  <div class="tw-flex ">
+                    <a
+                      href="/blogs/customer-stories/travels-with-tentbox-lite-the-world-is-our-oyster"
+                      class="tw-inline-flex tw-items-center hover:tw-underline tw-underline-offset-4 tw-font-medium   tw-text-orange"
+                      target="_self"
+                      data-tracking="featured-posts-block-link_Read-more_4"
+                    >
+                      <div>Read more</div>
+                      <div class="tw-h-3.5 tw-w-3.5 tw-ml-1">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="currentColor"
+                        >
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"></path>
+                        </svg>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="post_carousel__slide last:tw-mr-4 sm:last:tw-mr-0 xl:last:tw-mr-4 1.5xl:last:tw-mr-0 1.5xl:first:-tw-ml-4">
+            <div class="tw-bg-white tw-border tw-border-steel tw-rounded-xl tw-ml-4 tw-h-full">
+              <div class="tw-relative">
+                <img
+                  src="//tentbox.com/cdn/shop/articles/tentbox-is-the-best-camping-experience-youll-have.jpg?v=1684778708&amp;width=303"
+                  alt="&quot;TentBox is the best camping experience you'll have&quot;"
+                  srcset="//tentbox.com/cdn/shop/articles/tentbox-is-the-best-camping-experience-youll-have.jpg?v=1684778708&amp;width=260 260w, //tentbox.com/cdn/shop/articles/tentbox-is-the-best-camping-experience-youll-have.jpg?v=1684778708&amp;width=280 280w, //tentbox.com/cdn/shop/articles/tentbox-is-the-best-camping-experience-youll-have.jpg?v=1684778708&amp;width=303 303w"
+                  width="303"
+                  height="202"
+                  loading="lazy"
+                  sizes="(max-width: 374px) 260px, (max-width: 1279px) 280px, 303px"
+                  class="tw-rounded-t-xl tw-object-cover tw-aspect-[4/3]"
+                >
+                <div class="tw-flex tw-gap-1.5 tw-absolute tw-bottom-3 tw-left-3"></div>
+              </div>
+              <div class="tw-p-4">
+                <h3 class="tw-text-base md:tw-text-lg tw-mb-2 md:tw-mb-3 tw-font-body tw-normal-case tw-font-medium tw-line-clamp-3">
+                  "TentBox is the best camping experience you'll have"
+                </h3>
+                <p class="tw-mb-4 tw-line-clamp-3">Charly plans to take her baby camping</p>
+                <div class="tw-mb-4">
+                  <div class="tw-flex ">
+                    <a
+                      href="/blogs/customer-stories/tentbox-is-the-best-camping-experience-youll-have"
+                      class="tw-inline-flex tw-items-center hover:tw-underline tw-underline-offset-4 tw-font-medium   tw-text-orange"
+                      target="_self"
+                      data-tracking="featured-posts-block-link_Read-more_5"
+                    >
+                      <div>Read more</div>
+                      <div class="tw-h-3.5 tw-w-3.5 tw-ml-1">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="currentColor"
+                        >
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"></path>
+                        </svg>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="post_carousel__slide last:tw-mr-4 sm:last:tw-mr-0 xl:last:tw-mr-4 1.5xl:last:tw-mr-0 1.5xl:first:-tw-ml-4">
+            <div class="tw-bg-white tw-border tw-border-steel tw-rounded-xl tw-ml-4 tw-h-full">
+              <div class="tw-relative">
+                <img
+                  src="//tentbox.com/cdn/shop/articles/tentbox-blog-patrick-reviews-lite.jpg?v=1684842114&amp;width=303"
+                  alt="TentBox Owner Patrick Reviews The Lite"
+                  srcset="//tentbox.com/cdn/shop/articles/tentbox-blog-patrick-reviews-lite.jpg?v=1684842114&amp;width=260 260w, //tentbox.com/cdn/shop/articles/tentbox-blog-patrick-reviews-lite.jpg?v=1684842114&amp;width=280 280w, //tentbox.com/cdn/shop/articles/tentbox-blog-patrick-reviews-lite.jpg?v=1684842114&amp;width=303 303w"
+                  width="303"
+                  height="177"
+                  loading="lazy"
+                  sizes="(max-width: 374px) 260px, (max-width: 1279px) 280px, 303px"
+                  class="tw-rounded-t-xl tw-object-cover tw-aspect-[4/3]"
+                >
+                <div class="tw-flex tw-gap-1.5 tw-absolute tw-bottom-3 tw-left-3"></div>
+              </div>
+              <div class="tw-p-4">
+                <h3 class="tw-text-base md:tw-text-lg tw-mb-2 md:tw-mb-3 tw-font-body tw-normal-case tw-font-medium tw-line-clamp-3">
+                  TentBox Owner Patrick Reviews The Lite
+                </h3>
+                <p class="tw-mb-4 tw-line-clamp-3">Patrick upgrades his van with a TentBox Lite</p>
+                <div class="tw-mb-4">
+                  <div class="tw-flex ">
+                    <a
+                      href="/blogs/customer-stories/tentbox-owner-patrick-reviews-the-lite"
+                      class="tw-inline-flex tw-items-center hover:tw-underline tw-underline-offset-4 tw-font-medium   tw-text-orange"
+                      target="_self"
+                      data-tracking="featured-posts-block-link_Read-more_6"
+                    >
+                      <div>Read more</div>
+                      <div class="tw-h-3.5 tw-w-3.5 tw-ml-1">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="currentColor"
+                        >
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"></path>
+                        </svg>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="post_carousel__slide last:tw-mr-4 sm:last:tw-mr-0 xl:last:tw-mr-4 1.5xl:last:tw-mr-0 1.5xl:first:-tw-ml-4">
+            <div class="tw-bg-white tw-border tw-border-steel tw-rounded-xl tw-ml-4 tw-h-full">
+              <div class="tw-relative">
+                <img
+                  src="//tentbox.com/cdn/shop/articles/tentbox-trips-with-brand-ambassador-andrew-oneill.png?v=1684778715&amp;width=303"
+                  alt="TentBox Trips With Brand Ambassador Andrew O’Neill"
+                  srcset="//tentbox.com/cdn/shop/articles/tentbox-trips-with-brand-ambassador-andrew-oneill.png?v=1684778715&amp;width=260 260w, //tentbox.com/cdn/shop/articles/tentbox-trips-with-brand-ambassador-andrew-oneill.png?v=1684778715&amp;width=280 280w, //tentbox.com/cdn/shop/articles/tentbox-trips-with-brand-ambassador-andrew-oneill.png?v=1684778715&amp;width=303 303w"
+                  width="303"
+                  height="195"
+                  loading="lazy"
+                  sizes="(max-width: 374px) 260px, (max-width: 1279px) 280px, 303px"
+                  class="tw-rounded-t-xl tw-object-cover tw-aspect-[4/3]"
+                >
+                <div class="tw-flex tw-gap-1.5 tw-absolute tw-bottom-3 tw-left-3"></div>
+              </div>
+              <div class="tw-p-4">
+                <h3 class="tw-text-base md:tw-text-lg tw-mb-2 md:tw-mb-3 tw-font-body tw-normal-case tw-font-medium tw-line-clamp-3">
+                  TentBox trips with Ambassador Andrew O’Neill
+                </h3>
+                <p class="tw-mb-4 tw-line-clamp-3">Andrew explores the Scottish Isles</p>
+                <div class="tw-mb-4">
+                  <div class="tw-flex ">
+                    <a
+                      href="/blogs/customer-stories/tentbox-trips-with-brand-ambassador-andrew-oneill"
+                      class="tw-inline-flex tw-items-center hover:tw-underline tw-underline-offset-4 tw-font-medium   tw-text-orange"
+                      target="_self"
+                      data-tracking="featured-posts-block-link_Read-more_7"
+                    >
+                      <div>Read more</div>
+                      <div class="tw-h-3.5 tw-w-3.5 tw-ml-1">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="currentColor"
+                        >
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"></path>
+                        </svg>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="post_carousel__slide last:tw-mr-4 sm:last:tw-mr-0 xl:last:tw-mr-4 1.5xl:last:tw-mr-0 1.5xl:first:-tw-ml-4">
+            <div class="tw-bg-white tw-border tw-border-steel tw-rounded-xl tw-ml-4 tw-h-full">
+              <div class="tw-relative">
+                <img
+                  src="//tentbox.com/cdn/shop/articles/tentbox-community-adventures-where-weve-been-this-month.jpg?v=1684778702&amp;width=303"
+                  alt="TentBox Community Adventures: Where We've Been This Month"
+                  srcset="//tentbox.com/cdn/shop/articles/tentbox-community-adventures-where-weve-been-this-month.jpg?v=1684778702&amp;width=260 260w, //tentbox.com/cdn/shop/articles/tentbox-community-adventures-where-weve-been-this-month.jpg?v=1684778702&amp;width=280 280w, //tentbox.com/cdn/shop/articles/tentbox-community-adventures-where-weve-been-this-month.jpg?v=1684778702&amp;width=303 303w"
+                  width="303"
+                  height="227"
+                  loading="lazy"
+                  sizes="(max-width: 374px) 260px, (max-width: 1279px) 280px, 303px"
+                  class="tw-rounded-t-xl tw-object-cover tw-aspect-[4/3]"
+                >
+                <div class="tw-flex tw-gap-1.5 tw-absolute tw-bottom-3 tw-left-3"></div>
+              </div>
+              <div class="tw-p-4">
+                <h3 class="tw-text-base md:tw-text-lg tw-mb-2 md:tw-mb-3 tw-font-body tw-normal-case tw-font-medium tw-line-clamp-3">
+                  Where the Community has been this month
+                </h3>
+                <p class="tw-mb-4 tw-line-clamp-3">See where TentBoxers have been this month</p>
+                <div class="tw-mb-4">
+                  <div class="tw-flex ">
+                    <a
+                      href="/blogs/customer-stories/tentbox-community-adventures-where-weve-been-this-month"
+                      class="tw-inline-flex tw-items-center hover:tw-underline tw-underline-offset-4 tw-font-medium   tw-text-orange"
+                      target="_self"
+                      data-tracking="featured-posts-block-link_Read-more_8"
+                    >
+                      <div>Read more</div>
+                      <div class="tw-h-3.5 tw-w-3.5 tw-ml-1">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="currentColor"
+                        >
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"></path>
+                        </svg>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <span
+        class="tw-absolute tw-h-full tw-w-[8vw] tw-top-0 tw-right-0 tw-bg-gradient-to-l tw-from-cotton tw-hidden xl:tw-block"
+      ></span>
+    </div>
+
+    <div class="tw-flex tw-justify-center">
+      <a
+        href="/blogs/customer-stories"
+        class="tw-inline-flex tw-items-center hover:tw-underline tw-underline-offset-4 tw-font-medium tw-mt-5 tw-px-4 tw-text-lg "
+        target="_self"
+        data-tracking="featured-posts-section-link_More-customer-stories"
+      >
+        <div>More customer stories</div>
+        <div class="tw-h-4 tw-w-4 tw-ml-1.5">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+          >
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"></path>
+          </svg>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Customer stories",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Padding"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "Padding Top",
+      "default": 0,
+      "min": 0,
+      "max": 100,
+      "step": 10
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "Padding Bottom",
+      "default": 0,
+      "min": 0,
+      "max": 100,
+      "step": 10
+    }
+  ],
+  "presets": [
+    {
+      "name": "Customer stories",
+      "settings": {}
+    }
+  ]
+}
+{% endschema %}

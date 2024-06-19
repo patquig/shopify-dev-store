@@ -1,0 +1,44 @@
+@supports (animation-timeline: scroll()) {
+
+  .animate__scroll--zoom-out {
+    will-change: transform;
+
+    animation: zoomOut cubic-bezier(0.215, 0.610, 0.355, 1);
+
+    animation-timeline: view();
+    animation-range-start: 0;
+    animation-range-end: 100%;
+  }
+
+  @keyframes zoomOut {
+
+    from {
+      transform: scale(1.2);
+    }
+
+    to {
+      transform: scale(1);
+    }
+  }
+
+  .animate__scroll--parallax {
+    will-change: transform;
+
+    animation: parallax cubic-bezier(0.215, 0.610, 0.355, 1);
+
+    animation-timeline: view();
+    animation-range-start: 0;
+    animation-range-end: 200%;
+  }
+
+  @keyframes parallax {
+
+    from {
+      transform: scale(1.1) translateY(-2vh);
+    }
+
+    to {
+      transform: scale(1.1) translateY(2vh);
+    }
+  }
+}

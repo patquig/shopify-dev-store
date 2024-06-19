@@ -1,0 +1,118 @@
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+<div class="section-{{ section.id }}-padding tw-bg-white md:tw-px-4">
+  <div class="tw-mx-auto tw-max-w-screen-xl">
+    <div class="tw-grid tw-grid-cols-1 md:tw-grid-cols-2 tw-gap-6 md:tw-gap-8 tw-items-center">
+      <div class="{% if section.settings.animation_type != 'none' %}animate--container tw-overflow-clip md:tw-rounded-xl{% endif %}">
+        <div class="{% if section.settings.animation_type != 'none' %}animate__scroll--{{ section.settings.animation_type }}{% endif %} md:tw-rounded-xl">
+          <img
+            src="//tentbox.com/cdn/shop/files/home-image-text-3.jpg?v=1678459264&amp;width=767"
+            alt="An adventurous man climbing up the ladder into a TentBox Classic roof tent"
+            srcset="//tentbox.com/cdn/shop/files/home-image-text-3.jpg?v=1678459264&amp;width=425 425w, //tentbox.com/cdn/shop/files/home-image-text-3.jpg?v=1678459264&amp;width=767 767w"
+            width="767"
+            height="438"
+            loading="lazy"
+            sizes="(max-width: 425px) 425px, 767px"
+            class="md:tw-rounded-xl tw-object-cover tw-aspect-[7/4]"
+          >
+        </div>
+      </div>
+      <div class="tw-px-4 lg:tw-px-10 xl:tw-px-16">
+        <div class="tw-mb-4">
+          <h2 class="tw-text-3xl md:tw-text-3.5xl lg:tw-text-4xl">All fun, no hassle</h2>
+        </div>
+        <div class="tb-in-page-content tb-list-fix">
+          <p>
+            A TentBox is a roof tent that attaches to any vehicle. With a quick setup time, and integrated mattress,
+            this is your route to quick, comfy camping, without the faff of a traditional tent.
+          </p>
+        </div>
+        <div class="tw-mt-6 md:tw-mt-8">
+          <a
+            href="/collections/roof-tents"
+            class="tw-inline-flex tw-place-items-center tw-rounded  tw-px-3.5 tw-py-2.5 md:tw-px-4.5 md:tw-py-3 tw-text-white tw-bg-black tw-border-2 tw-border-black hover:tw-bg-black-h hover:tw-border-black-h"
+            target="_self"
+            data-tracking="image-text-button_Shop-roof-tents"
+          >
+            <div class="tw-flex tw-items-center tw-justify-center">
+              <span class="tw-leading-none">Shop roof tents</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Text & Image",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Animation"
+    },
+    {
+      "type": "select",
+      "id": "animation_type",
+      "label": "Animation type",
+      "options": [
+        {
+          "value": "zoom-out",
+          "label": "Zoom Out"
+        },
+        {
+          "value": "parallax",
+          "label": "Parallax"
+        },
+        {
+          "value": "none",
+          "label": "None"
+        }
+      ],
+      "default": "parallax"
+    },
+    {
+      "type": "header",
+      "content": "Padding"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "Padding Top",
+      "default": 0,
+      "min": 0,
+      "max": 100,
+      "step": 10
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "Padding Bottom",
+      "default": 0,
+      "min": 0,
+      "max": 100,
+      "step": 10
+    }
+  ],
+  "presets": [
+    {
+      "name": "Text & Image",
+      "settings": {}
+    }
+  ]
+}
+{% endschema %}

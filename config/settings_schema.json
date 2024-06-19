@@ -206,6 +206,12 @@
     "settings": [
       {
         "type": "checkbox",
+        "id": "smooth_scroll",
+        "label": "Smooth scroll",
+        "default": true
+      },
+      {
+        "type": "checkbox",
         "id": "animations_reveal_on_scroll",
         "label": "t:settings_schema.animations.settings.animations_reveal_on_scroll.label",
         "default": true
